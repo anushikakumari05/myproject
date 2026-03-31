@@ -1,0 +1,167 @@
+.navbar {
+  background-color: #e6f2ec;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin: 0 1.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #2f4f4f;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #4caf50;
+}
+
+.hero {
+  background: #dbece3;
+  padding: 2rem;
+  text-align: center;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 1rem;
+  color: #555;
+}
+
+ .media, .cta {
+  padding: 2rem;
+  margin: 1rem;
+  background: #ffffff;
+  border-left: 5px solid #a0d8b3;
+  border-radius: 8px;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #a0d8b3;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.cta-button:hover {
+  background: #7bbf9e;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #dbece3;
+  font-size: 0.9rem;
+}
+.signup-form {
+  padding: 2rem;
+  margin: 1rem;
+  background: #ffffff;
+  border-left: 5px solid #a0d8b3;
+  border-radius: 8px;
+}
+
+.signup-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form label {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.signup-form input,
+.signup-form textarea,
+.signup-form select {
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.signup-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.signup-form button {
+  margin-top: 2rem;
+  background: #a0d8b3;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background: #7bbf9e;
+}
+.welcome {
+  padding: 2rem;
+  margin: 1rem;
+  background: #ffffff;
+  border-left: 5px solid #a0d8b3;
+  border-radius: 8px;
+  animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* ⭐ Better spacing inside schedule list */
+.schedule-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.schedule-text ul li {
+  margin-bottom: 22px;      /* gap between items */
+  padding-bottom: 12px;     /* inside spacing */
+  border-bottom: 1px solid rgba(0,0,0,0.1);  /* light divider */
+  line-height: 1.6;         /* better text spacing */
+}
+
+.schedule-text ul li:last-child {
+  border-bottom: none;      /* remove last line */
+}
+
+.schedule-text strong {
+  font-size: 1.1rem;
+}
+
+.schedule-text em {
+  color: #555;
+  font-size: 0.95rem;
+}
+.intro {
+  padding: 3rem;
+  margin: 2rem;
+  background: #ffffff;
+  border-left: 5px solid #a0d8b3;
+  border-radius: 8px;
+}
+.intro p {
+  font-size: 1.1rem;
+}

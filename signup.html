@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Join SoulFit</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Signup Header -->
+  <header class="hero">
+    <h1>Become a SoulMover</h1>
+    <p class="quote">“Every form you fill is a promise to your own healing.”</p>
+  </header>
+
+  <!-- Signup Form -->
+  <section class="signup-form">
+    <h2>🌼 Sign Up</h2>
+    <form id="signupForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Aushika..." required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@soulfit.com" required />
+
+      <label for="goal">Your Fitness + Healing Goal:</label>
+      <textarea id="goal" name="goal" placeholder="Share your intention..."></textarea>
+
+      <label for="plan">Choose Your Plan:</label>
+      <select id="plan" name="plan">
+        <option value="basic">Basic — Movement & Mindfulness</option>
+        <option value="premium">Premium — Soulgram + Classes</option>
+        <option value="healing">Healing Circle — Full Access</option>
+      </select>
+
+      <button type="submit" class="cta-button">Begin Your Journey</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Made with warmth by Anushika 🌸</p>
+  </footer>
+
+  <script>
+    // Redirect signup to payment page
+    document.getElementById("signupForm").addEventListener("submit", function(e){
+        e.preventDefault(); // prevent default form submission
+        // Optional: Here you can save signup data to backend if needed
+        window.location.href = "payment.html"; // Redirect to payment page
+    });
+  </script>
+  <script>
+document.getElementById("signupForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    
+    // Get selected plan
+    const plan = document.getElementById("plan").value;
+
+    // Redirect to payment page with plan as URL param
+    window.location.href = `payment.html?plan=${plan}`;
+});
+</script>
+
+</body>
+</html>
+
